@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prototype</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://use.fontawesome.com/5236d4a6dd.js"></script>
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <%= javascript_include_tag 'application' %>
+        <% if Rails.env.development? %>
+        <script src="http://localhost:3808/webpack-dev-server.js"></script>
+      <% end %>
+</head>
+
+  <body>
+    <%= yield %>
+  <%= javascript_include_tag *webpack_asset_paths('application') %>
+</body>
+</html>
