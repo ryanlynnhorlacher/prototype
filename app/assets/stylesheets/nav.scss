@@ -45,6 +45,15 @@
 	padding-top: 35px;
 }
 
+@media (min-width: 549px) {
+	.sideMenuOpen {
+		display: none;
+	}
+	.sideMenuClose {
+		display: none;
+	}
+}
+
 @media (max-width: 550px) {
 	.nav-buttons-wrapper {
 		display: none;
