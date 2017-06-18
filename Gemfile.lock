@@ -46,6 +46,8 @@ GEM
     concurrent-ruby (1.0.5)
     erubis (2.7.0)
     execjs (2.7.0)
+    faker (1.7.3)
+      i18n (~> 0.5)
     ffi (1.9.18)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
@@ -149,6 +151,7 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
+  faker (~> 1.7.3)
   jbuilder (~> 2.5)
   listen (~> 3.0.5)
   pg (~> 0.18)
@@ -164,4 +167,4 @@ DEPENDENCIES
   webpack-rails-react (~> 1.0.14)
 
 BUNDLED WITH
-   1.13.5
+   1.15.1
