@@ -17,6 +17,11 @@ class Nav extends React.Component {
       <div
         className='nav'
       >
+        <img
+          src='https://www.britishlogodesign.co.uk/portfolio_pictures/Electrical-logo-design-8.jpg'
+          alt='logo'
+          className='nav-logo'
+        />
       <OpenMenuButton toggle={ this.toggleMenu }/>
       <div
         className='nav-buttons-wrapper'

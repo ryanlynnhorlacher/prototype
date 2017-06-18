@@ -5,18 +5,18 @@ import NavButton from '../components/nav/NavButton';
 const App = ({ children }) => {
   return (
     <div>
-      <Nav>
-        <NavButton side='right'/>
-        <NavButton side='right'/>
-        <NavButton side='right'/>
-        <NavButton side='right'/>
-        <NavButton side='right'/>
-      </Nav>
       <div
         className='nav-padding'
       >
         { children }
       </div>
+      <Nav>
+        <NavButton side='right' content='Home'/>
+        <NavButton side='right' content='Gallery'/>
+        <NavButton side='right' content='Estimator'/>
+        <NavButton side='right' content='About Us'/>
+        <NavButton side='right' content='Contact Us'/>
+      </Nav>
     </div>
   )
 }

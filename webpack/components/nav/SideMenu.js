@@ -13,6 +13,7 @@ class SideMenu extends React.Component {
       <div
         className={ `${this.getClass()}` }
       >
+        <div className='sideMenuGrey' />
         { this.props.buttons }
       </div>
     );
