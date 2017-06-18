@@ -6,14 +6,13 @@ class OpenMenuButton extends React.Component {
     super(props);
   }
 
-        // <i className="fa fa-bars" onClick={ this.onClick }></i>
 
   render() {
     return (
-      <div
+      <i
+        className="fa fa-bars"
         onClick={ this.props.toggle }
-        className='fa-bars'>
-      </div>
+      />
     );
   }
 }

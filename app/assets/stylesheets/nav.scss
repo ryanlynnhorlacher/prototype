@@ -4,7 +4,15 @@
 	top: 0px;
 	height: 90px;
 	width: 100%;
-	background-color: red;
+	background-color: #63966e;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: stretch;
+}
+
+.sideMenuGrey {
+	display: none
 }
 
 .sideMenuClosed {
@@ -13,10 +21,20 @@
 	left: -66%;
 	top: 60px;
 	bottom: 0px;
-	background-color: yellow;
-	z-index: 9999;
+	background-color: #63966e;
 	transition-property: left;
-	transition-duration: 0.2s
+	transition-duration: 0.2s;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+.nav-logo {
+	height: 50px;
+	width: 50px;
+	align-self: center;
+	position: absolute;
+	left: 25px;
 }
 
 .sideMenuOpen {
@@ -25,51 +43,84 @@
 	left: 0%;
 	top: 60px;
 	bottom: 0px;
-	background-color: yellow;
-	border-right: 1px solid black;
-	z-index: 9999;
+	background-color: #63966e;
 	transition-property: left;
-	transition-duration: 0.2s
+	transition-duration: 0.2s;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
 }
 
 .fa-bars {
-	display: none;
+	display: none !important;
+	align-self: center;
 }
 
 .nav-button {
-	height: 55px;
 	width: 90px;
-	background-color: silver;
 	color: black;
 	text-align: center;
-	padding-top: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+.nav-buttons-wrapper {
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+}
+
+@media (min-width: 549px) {
+	.sideMenuOpen {
+		display: none;
+	}
+	.sideMenuClose {
+		display: none;
+	}
 }
 
 @media (max-width: 550px) {
 	.nav-buttons-wrapper {
 		display: none;
 	}
+
+	.sideMenuGrey {
+		position: fixed;
+		right: 0px;
+		left: 0px;
+		top: 0px;
+		bottom: 0px;
+	}
+
+	.nav-logo {
+		height: 50px;
+		width: 50px;
+		align-self: center;
+		position: absolute;
+		right: 25px !important;
+		left: auto;
+	}
+
 	.nav {
 		height: 60px;
-		background-color: green;
+		background-color: #63966e;
+		justify-content: flex-start;
+		align-items: center;
 	}
 	.fa-bars {
-		margin-top: 11px;
-		background-color: black;
-		height: 30px;
-		width: 30px;
-		display: block;
+		display: block !important;
 		margin-left: 15px;
+		font-size: 35px !important;
+		color: white;
 	}
 	.nav-button {
+		width: auto;
 		height: 60px;
-		width: 100%;
-		background-color: silver;
 		color: black;
-		border-right: 0px none transparent;
-		border-left: 0px none transparent;
-		border-bottom: 1px solid black;
 		float: none;
+		color: white;
 	}
 }
 

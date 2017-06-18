@@ -1,14 +1,6 @@
 import React from 'react';
 
 class NavButton extends React.Component {
-  constructor(props) {
-    super(props);
-    this.style={
-    	float: props.side,
-    	[`border${this.getBorder(props.side)}`]: '1px solid black',
-    	...props.style,
-    }
-  }
 
   getBorder = (side) => side === 'right' ? 'Left' : 'Right'
 
@@ -17,9 +9,9 @@ class NavButton extends React.Component {
       <div
       	onClick={ this.props.onClick }
       	className='nav-button'
-      	style={ this.style }
+        style={ this.props.style }
       >
-        NavButton
+        { this.props.content }
       </div>  
     );
   }
