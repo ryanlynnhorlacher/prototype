@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  section_title: MyString
+  category: MyString
+  rank: 1
+  paragraph_text: MyText
+
+two:
+  section_title: MyString
+  category: MyString
+  rank: 1
+  paragraph_text: MyText
